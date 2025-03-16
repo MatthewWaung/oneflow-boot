@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>oneflow</artifactId>
+    <artifactId>oneflow-boot</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
@@ -23,7 +23,6 @@
         <module>oneflow-starters/oneflow-i18n-spring-boot-starter</module>
         <module>oneflow-starters/oneflow-lock-spring-boot-starter</module>
         <module>oneflow-starters/oneflow-mybatis-plus-spring-boot-starter</module>
-        <module>oneflow-starters/ecoflow-robot-spring-boot-starter</module>
         <module>oneflow-starters/oneflow-robot-spring-boot-starter</module>
     </modules>
 
