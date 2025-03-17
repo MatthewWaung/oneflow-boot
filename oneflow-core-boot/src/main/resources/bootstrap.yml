@@ -1,0 +1,5 @@
+
+# 开启weblog日志打印
+oneflow:
+  web:
+    log: true

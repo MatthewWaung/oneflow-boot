@@ -85,4 +85,8 @@ public interface OneflowConstant {
      * 默认未授权消息
      */
     String DEFAULT_UNAUTHORIZED_MESSAGE = "签名认证失败";
+    /**
+     * 链路id
+     */
+    String TRACE_ID = "traceId";
 }

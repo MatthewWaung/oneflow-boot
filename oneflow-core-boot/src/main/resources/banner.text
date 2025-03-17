@@ -1,0 +1,8 @@
+${AnsiColor.BRIGHT_CYAN}  ____              __ _
+${AnsiColor.BRIGHT_CYAN} / __ \            / _| |
+${AnsiColor.BRIGHT_CYAN}| |  | |_ __   ___| |_| | _____      __
+${AnsiColor.BRIGHT_CYAN}| |  | | '_ \ / _ \  _| |/ _ \ \ /\ / /
+${AnsiColor.BRIGHT_CYAN}| |__| | | | |  __/ | | | (_) \ V  V /
+${AnsiColor.BRIGHT_CYAN} \____/|_| |_|\___|_| |_|\___/ \_/\_/
+
+${AnsiColor.BLUE}:: Oneflow :: ${spring.application.name}:${AnsiColor.RED}${blade.env}${AnsiColor.BLUE} :: Running SpringBoot ${spring-boot.version} :: ${AnsiColor.BRIGHT_BLACK}

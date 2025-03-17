@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.oneflow.core.boot.config.ExecutorConfiguration,\
+  com.oneflow.core.boot.config.RetryConfiguration,\
+  com.oneflow.core.boot.config.ThreadPoolConfiguration,\
+  com.oneflow.core.boot.config.TraceIdConfiguration,\
+  com.oneflow.core.boot.config.WebLogAspectConfig

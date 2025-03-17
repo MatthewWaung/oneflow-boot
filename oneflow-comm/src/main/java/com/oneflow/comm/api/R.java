@@ -21,6 +21,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.slf4j.MDC;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ObjectUtils;
 
@@ -50,6 +51,8 @@ public class R<T> implements Serializable {
 	private T data;
 	@Schema(description = "返回消息")
 	private String msg;
+	@Schema(description = "请求id")
+	private String traceId;
 
 	private R(IResultCode resultCode) {
 		this(resultCode, null, resultCode.getMessage());
@@ -72,6 +75,7 @@ public class R<T> implements Serializable {
 		this.data = data;
 		this.msg = msg;
 		this.success = ResultCode.SUCCESS.code == code;
+		this.traceId = getTraceId();
 	}
 
 	/**
@@ -244,6 +248,10 @@ public class R<T> implements Serializable {
 	 */
 	public static <T> R<T> status(boolean status, String msg) {
 		return status ? R.success() : R.fail(msg);
+	}
+
+	private static String getTraceId() {
+		return MDC.get(OneflowConstant.TRACE_ID);
 	}
 
 }
