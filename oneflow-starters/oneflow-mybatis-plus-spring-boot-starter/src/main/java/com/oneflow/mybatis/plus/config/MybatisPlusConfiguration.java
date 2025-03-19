@@ -23,10 +23,10 @@ import com.oneflow.mybatis.plus.intercept.SqlLogInterceptor;
 import com.oneflow.mybatis.plus.props.MybatisPlusProperties;
 import lombok.AllArgsConstructor;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 import java.util.Collections;
 
@@ -35,7 +35,7 @@ import java.util.Collections;
  *
  * @author Chill
  */
-@EnableAutoConfiguration
+@Configuration
 @AllArgsConstructor
 @MapperScan("org.oneflow.**.mapper.**")
 @EnableConfigurationProperties(MybatisPlusProperties.class)

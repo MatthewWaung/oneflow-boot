@@ -34,6 +34,7 @@
         <spring.boot.version>2.6.12</spring.boot.version>
         <spring.cloud.version>2021.0.0</spring.cloud.version>
         <alibaba.cloud.version>2.2.6.RELEASE</alibaba.cloud.version>
+        <redisson.version>3.39.0</redisson.version>
 
         <lombok.version>1.18.22</lombok.version>
         <springdoc.version>1.6.9</springdoc.version>
@@ -44,6 +45,7 @@
         <mybatis.plus.version>3.5.8</mybatis.plus.version>
         <mysql.version>8.0.26</mysql.version>
         <jackson.version>2.18.2</jackson.version>
+        <fastjson.version>2.0.53</fastjson.version>
 
     </properties>
 
@@ -72,6 +74,13 @@
                 <version>${alibaba.cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+
+            <!-- Redisson -->
+            <dependency>
+                <groupId>org.redisson</groupId>
+                <artifactId>redisson-spring-boot-starter</artifactId>
+                <version>${redisson.version}</version>
             </dependency>
 
             <!-- lombok -->
@@ -141,6 +150,13 @@
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson.version}</version>
             </dependency>
+            <!-- FastJson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
 
         </dependencies>
 

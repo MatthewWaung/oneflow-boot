@@ -16,9 +16,9 @@
 package com.oneflow.core.boot.config;
 
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.retry.interceptor.RetryInterceptorBuilder;
 import org.springframework.retry.interceptor.RetryOperationsInterceptor;
 
@@ -28,7 +28,7 @@ import org.springframework.retry.interceptor.RetryOperationsInterceptor;
  * @author Chill
  */
 @Slf4j
-@EnableAutoConfiguration
+@Configuration
 public class RetryConfiguration {
 
 	@Bean
